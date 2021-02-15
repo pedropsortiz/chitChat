@@ -48,7 +48,7 @@
 </script>
 
 <form onsubmit="return sendMessage()">
-        <input id="message" placeholder="enter a message" autocomplete="off">
+        <input id="message" placeholder="Write a message" autocomplete="off">
         <input type="submit">
     </form>
 
