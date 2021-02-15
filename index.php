@@ -10,7 +10,8 @@
     <title>Chit Chat</title>
     <script>
         function goChat(){
-            sessionStorage.setItem('nick', );
+            var myName = document.getElementById("nickname").value;
+            sessionStorage.setItem('nick', myName);
             window.location.href = "chitchat.php";
         }
     </script>
@@ -21,7 +22,7 @@
         <h1 class="title" style="margin-top: 5%;">Chit Chat</h1>
         <div class="input-group mb-3" style="margin-top: 3%; width: 30%;">
             <span class="input-group-text" id="basic-addon1">@</span>
-            <input required type="text" id="nickname" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input required type="text" value="Joe Doe" id="nickname" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <button type="button" onclick="goChat()" id="buttonSubmit" style="margin-top: 2%;" class="btn btn-success">Let's chat</button>
     </center>
