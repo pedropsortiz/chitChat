@@ -20,7 +20,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  var myName = prompt("enter your name");
+  //var myName = prompt("enter your name");
 
   function sendMessage() {
         // get message
